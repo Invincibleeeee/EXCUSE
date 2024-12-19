@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excuse Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="excuse-container">
+    <h1>Excuse Generator</h1>
+    <p class="fun-description">Choose your excuse category and let the randomness begin!</p>
+
+    <div class="dropdown-container">
+      <label for="category">Pick a category:</label>
+      <select id="category">
+        <option value="HR">HR</option>
+        <option value="professor">Professor</option>
+        <option value="friend">Friend</option>
+        <option value="girlfriend">Girlfriend</option>
+        <option value="father">Father</option>
+      </select>
+      <button class="btn generate-btn" onclick="showExcuse()">Generate</button>
+    </div>
+
+    <div class="dialog-box">
+      <p id="excuse">Your excuse will appear here!</p>
+      <button class="btn copy-btn" onclick="copyExcuse()">Copy</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
